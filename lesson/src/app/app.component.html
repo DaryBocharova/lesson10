@@ -1,0 +1,10 @@
+<a routerLink="/one" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">app-one</a>
+<br>
+<a [routerLink]='["/two"]' routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">app-two</a>
+<br>
+<a [routerLink]='["/three"]'
+  [queryParams]="{utm_source: '001',utm_medium: '002',utm_campaign: '003',utm_term: '004',utm_content: '005'}"
+  routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">app-three</a>
+<br>
+<router-outlet></router-outlet>
+<br>
